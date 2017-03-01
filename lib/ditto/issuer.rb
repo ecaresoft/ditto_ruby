@@ -1,39 +1,11 @@
-require 'ditto/client'
+require 'ditto/base'
 
-class Ditto::Issuer
-  ATTRIBUTES = [:id, :name, :rfc, :regimen, :userNameSF, :passwordSF, :satPass,
-                :production, :location, :fiscalLocation]
-  attr_accessor(*ATTRIBUTES)
+class Ditto::Issuer < Ditto::Base
+  attr_accessor :id, :name, :rfc, :regimen, :userNameSF, :passwordSF, :satPass,
+                :production, :location, :fiscalLocation
 
   def initialize(attrs = {})
-    attrs.each do |key, value|
-      send("#{key}=", value) if respond_to? key
-    end
-  end
-
-  def self.create(attrs = {})
-    new(attrs).save
-  end
-
-  def save
-    if id.nil?
-      client.post("/SaveEmisorMaster/Emisor?UserId=#{Ditto.api_key}", to_hash)
-    end
-  end
-
-  private
-  def client
-    @client ||= Ditto::Client.new
-  end
-
-  def to_hash
-    attrs = {}
-
-    ATTRIBUTES.each do |a|
-      value = send("#{a}")
-      attrs[a] = value if !value.nil?
-    end
-
-    attrs
+    super(attrs)
+    @new_url = "SaveEmisorMaster/Emisor?UserId=#{Ditto.api_key}"
   end
 end
