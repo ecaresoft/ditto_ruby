@@ -29,17 +29,17 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1002'
+      - '1003'
       Date:
-      - Wed, 01 Mar 2017 04:58:09 GMT
+      - Wed, 01 Mar 2017 05:23:37 GMT
     body:
       encoding: UTF-8
-      string: '{"id":"A32B3","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMyQjM=","production":false,"location":{"id":"A36B9","street":"calle
+      string: '{"id":"A30B8","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMwQjg=","production":false,"location":{"id":"A34B14","street":"calle
         siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
-        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488344289000,"updated":1488344289000,"state":"DISTRITO
-        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A40B3","street":"AV.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488345817000,"updated":1488345817000,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A38B9","street":"AV.
         UNIVERSIDAD 4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO
-        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488344289000,"updated":1488344289000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488344289000,"updated":1488344289000}'
+        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488345817000,"updated":1488345817000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488345817000,"updated":1488345817000}'
     http_version: 
-  recorded_at: Wed, 01 Mar 2017 04:58:09 GMT
+  recorded_at: Wed, 01 Mar 2017 05:23:37 GMT
 recorded_with: VCR 3.0.3
