@@ -5,7 +5,7 @@ require 'ditto_ruby/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ditto_ruby"
-  spec.version       = DittoRuby::VERSION
+  spec.version       = Ditto::VERSION
   spec.authors       = ["Ben Orozco"]
   spec.email         = ["benoror@gmail.com"]
 

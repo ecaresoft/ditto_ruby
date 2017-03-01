@@ -1,5 +1,4 @@
-require "ditto_ruby/version"
+require 'ditto_ruby/version'
 
-module DittoRuby
-  # Your code goes here...
+module Ditto
 end
