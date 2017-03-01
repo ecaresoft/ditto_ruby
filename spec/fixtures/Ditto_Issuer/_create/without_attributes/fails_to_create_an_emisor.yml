@@ -9,7 +9,7 @@ http_interactions:
         siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
         140","apartmentNumber":"5","country":"Mexico","active":true,"state":"DISTRITO
         FEDERAL","address":"ACACIAS"},"fiscalLocation":{"street":"AV. UNIVERSIDAD
-        4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO FEDERAL","streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true},"active":true}'
+        4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO FEDERAL","streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true}}'
     headers:
       User-Agent:
       - Faraday v0.11.0
@@ -33,7 +33,7 @@ http_interactions:
       Content-Length:
       - '6387'
       Date:
-      - Wed, 01 Mar 2017 05:23:37 GMT
+      - Wed, 01 Mar 2017 19:40:14 GMT
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -180,5 +180,5 @@ http_interactions:
         YWNoZSBUb21jYXQvOC4wLjI3LjwvdT48L3A+PGhyIGNsYXNzPSJsaW5lIj48
         aDM+QXBhY2hlIFRvbWNhdC84LjAuMjc8L2gzPjwvYm9keT48L2h0bWw+
     http_version: 
-  recorded_at: Wed, 01 Mar 2017 05:23:38 GMT
+  recorded_at: Wed, 01 Mar 2017 19:40:14 GMT
 recorded_with: VCR 3.0.3

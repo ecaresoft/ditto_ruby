@@ -1,8 +1,6 @@
 require 'spec_helper'
 
-describe Ditto::Emisor do
-  let(:client) { Ditto::Client.new(url: URL, api_key: API_KEY, base_path: BASE_PATH) }
-
+describe Ditto::Issuer do
   let(:attributes) do
     {
       name: 'Benjamin Orozco Rios',
@@ -39,20 +37,18 @@ describe Ditto::Emisor do
 
   describe '#create' do
     context 'with attributes' do
-      let(:emisor) { Ditto::Emisor.new(client) }
-
       it 'creates an emisor', :vcr do
-        response = emisor.create(attributes)
+        response = Ditto::Issuer.create(attributes)
         expect(response.keys).to include('id')
       end
     end
 
     context 'without attributes' do
-      let(:emisor) { Ditto::Emisor.new(client) }
+      let(:emisor) { Ditto::Issuer.new(client) }
 
       it 'fails to create an emisor', :vcr do
         attributes.delete(:rfc)
-        expect { emisor.create(attributes) }.to raise_error(Faraday::ClientError)
+        expect { Ditto::Issuer.create(attributes) }.to raise_error(Faraday::ClientError)
       end
     end
   end
@@ -60,7 +56,7 @@ describe Ditto::Emisor do
   describe '#fetch' do
     it 'fetches an emisor' do
       pending('pending to implement')
-      response = Ditto::Emisor.fetch(client, attributes[:id])
+      response = Ditto::Issuer.find(attributes[:id])
     end
   end
 end
