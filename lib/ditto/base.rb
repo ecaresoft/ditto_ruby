@@ -1,7 +1,8 @@
 require 'ditto/client'
 
 class Ditto::Base
-  @new_url = ''
+  @create_path = ''
+  @update_path = ''
 
   def initialize(attrs = {})
     attrs.each do |key, value|
@@ -10,12 +11,20 @@ class Ditto::Base
   end
 
   def self.create(attrs = {})
-    new(attrs).save
+    instance = new(attrs)
+    instance.save
+    instance
   end
 
   def save
-    if id.nil?
-      client.post(@new_url, to_hash)
+    response = if id.nil? then
+      client.post(@create_path, to_hash)
+    else
+      client.put(@update_path, to_hash)
+    end
+
+    response.each do |key, value|
+      send("#{key}=", value) if respond_to? key
     end
   end
 

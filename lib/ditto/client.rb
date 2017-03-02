@@ -2,6 +2,8 @@ require 'faraday'
 require 'faraday_middleware'
 
 class Ditto::Client
+  attr_accessor :refresh_token
+
   def get(path, params = {})
     connection.get do |request|
       request.url "#{Ditto.base_path}/#{path}"
@@ -32,5 +34,10 @@ class Ditto::Client
       c.use Faraday::Response::RaiseError
       c.response :json, content_type: /\bjson$/
     end
+  end
+
+  def token
+    @session_token ||=
+      get("InitApi?Key=#{refresh_token}&UserId=#{Ditto.api_key}")['token']
   end
 end
