@@ -17,11 +17,12 @@ class Ditto::Base
   end
 
   def save
-    response = if id.nil? then
-      client.post(@create_path, to_hash)
-    else
-      client.put(@update_path, to_hash)
-    end
+    response =
+      if id.nil?
+        client.post(@create_path, to_hash)
+      else
+        client.put(@update_path, to_hash)
+      end
 
     response.each do |key, value|
       send("#{key}=", value) if respond_to? key
@@ -52,7 +53,7 @@ class Ditto::Base
 
     attributes.each do |a|
       value = send("#{a}")
-      attrs[a] = value if !value.nil?
+      attrs[a] = value unless value.nil?
     end
 
     attrs

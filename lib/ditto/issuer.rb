@@ -12,19 +12,19 @@ class Ditto::Issuer < Ditto::Base
   def save
     no_config = id.nil?
 
-    response = if no_config then
-      client.post(@create_path, to_hash)
-    else
-      client.put(@update_path, to_hash)
-    end
+    response =
+      if no_config
+        client.post(@create_path, to_hash)
+      else
+        client.put(@update_path, to_hash)
+      end
 
     response.each do |key, value|
       send("#{key}=", value) if respond_to? key
     end
 
-    client.post("SaveEmisorConfigurationMaster/Configuration?UserId=#{Ditto.api_key}", {
-      emisorId: id, sessionDuration: 24
-    }) if no_config
+    client.post("SaveEmisorConfigurationMaster/Configuration?UserId=#{Ditto.api_key}",
+                { emisorId: id, sessionDuration: 24 }) if no_config
 
     client.refresh_token = key
   end

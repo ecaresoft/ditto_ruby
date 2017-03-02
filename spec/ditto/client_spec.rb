@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe Ditto::Client do
-  let(:client) { Ditto::Client.new }
-
   it 'catches HTTP 500 errors', :vcr do
     expect { Ditto::Issuer.create }.to raise_error(
       Faraday::ClientError, 'the server responded with status 500'

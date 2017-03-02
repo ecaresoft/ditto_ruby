@@ -2,6 +2,9 @@ AllCops:
   Exclude:
     - 'bin/**/*'
 
+Style/BracesAroundHashParameters:
+  Enabled: false
+
 Style/MutableConstant:
   Enabled: false
 
