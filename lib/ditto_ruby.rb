@@ -1,5 +1,6 @@
 require 'ditto/version'
 require 'ditto/issuer'
+require 'ditto/document'
 
 module Ditto
   @api_key = 'benoror'

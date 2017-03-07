@@ -37,14 +37,15 @@ describe Ditto::Issuer do
 
   describe '#create' do
     context 'with attributes' do
-      it 'succeed to create an emisor', :vcr do
+      it 'succeed to create an issuer', :vcr do
         issuer = Ditto::Issuer.create(attributes)
         expect(issuer.id).to_not be_nil
+        expect(issuer.client.token).to_not be_nil
       end
     end
 
     context 'without attributes' do
-      it 'fails to create an emisor', :vcr do
+      it 'fails to create an issuer', :vcr do
         attributes.delete(:rfc)
         expect { Ditto::Issuer.create(attributes) }.to raise_error(Faraday::ClientError)
       end
@@ -52,7 +53,7 @@ describe Ditto::Issuer do
   end
 
   describe '#retrieve' do
-    it 'retrieves an emisor' do
+    it 'retrieves an issuer' do
       pending('pending to implement')
       issuer = Ditto::Issuer.retrieve(attributes[:id])
       expect(issuer.id).to_not be_nil

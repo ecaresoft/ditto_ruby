@@ -43,16 +43,16 @@ class Ditto::Base
     self.class.attributes
   end
 
-  protected
   def client
     @client ||= Ditto::Client.new
   end
 
+  protected
   def to_hash
     attrs = {}
 
     attributes.each do |a|
-      value = send("#{a}")
+      value = send(a.to_s)
       attrs[a] = value unless value.nil?
     end
 

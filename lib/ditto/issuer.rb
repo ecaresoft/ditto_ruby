@@ -28,4 +28,12 @@ class Ditto::Issuer < Ditto::Base
 
     client.refresh_token = key
   end
+
+  def find_document(id)
+    Ditto::Document.find(self, id)
+  end
+
+  def create_document(attrs)
+    Ditto::Document.create(self, attrs)
+  end
 end
