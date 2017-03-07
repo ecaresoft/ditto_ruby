@@ -1,4 +1,6 @@
 require 'ditto/base'
+require 'ditto/resource'
+require 'ditto/document'
 
 class Ditto::Issuer < Ditto::Base
   attr_accessor :id, :name, :rfc, :regimen, :userNameSF, :passwordSF, :satPass,
@@ -23,17 +25,22 @@ class Ditto::Issuer < Ditto::Base
       send("#{key}=", value) if respond_to? key
     end
 
-    client.post("SaveEmisorConfigurationMaster/Configuration?UserId=#{Ditto.api_key}",
-                { emisorId: id, sessionDuration: 24 }) if no_config
+    if no_config
+      client.post(
+        "SaveEmisorConfigurationMaster/Configuration?UserId=#{Ditto.api_key}",
+        { emisorId: id, sessionDuration: 24 }
+      )
+    end
 
     client.refresh_token = key
   end
 
-  def find_document(id)
-    Ditto::Document.find(self, id)
-  end
-
-  def create_document(attrs)
-    Ditto::Document.create(self, attrs)
+  def documents
+    @documents ||=
+      Ditto::Resource.new(
+        Ditto::Document,
+        client,
+        "SearchDocument/{id}?Token=#{client.token}"
+      )
   end
 end

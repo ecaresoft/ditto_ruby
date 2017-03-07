@@ -56,33 +56,33 @@ describe Ditto::Document do
   end
 
   context 'issuer' do
-    describe '#create_document' do
-      it 'must have a create_document method', :vcr do
-        expect(issuer).to respond_to(:create_document)
+    describe '#documents create' do
+      it 'documents must have a create method', :vcr do
+        expect(issuer.documents).to respond_to(:create)
       end
 
       it 'fails to create empty document', :vcr do
-        expect { issuer.create_document({}) }.to raise_error(Faraday::ClientError)
+        expect { issuer.documents.create({}) }.to raise_error(Faraday::ClientError)
       end
 
       it 'succeed to create a document', :vcr do
-        document = issuer.create_document(attributes)
+        document = issuer.documents.create(attributes)
         expect(document.id).to_not be_nil
       end
     end
 
-    describe '#find_document' do
-      it 'must have a find_document method', :vcr do
-        expect(issuer).to respond_to(:find_document)
+    describe '#documents find' do
+      it 'documents must have a find method', :vcr do
+        expect(issuer.documents).to respond_to(:find)
       end
 
       it 'fails to find an unknown document', :vcr do
-        expect { issuer.find_document('123') }.to raise_error(Faraday::ClientError)
+        expect { issuer.documents.find('123') }.to raise_error(Faraday::ClientError)
       end
 
       it 'succeed to find an existing document', :vcr do
-        document1 = issuer.create_document(attributes)
-        document2 = issuer.find_document(document1.id)
+        document1 = issuer.documents.create(attributes)
+        document2 = issuer.documents.find(document1.id)
         expect(document2.id).to_not be_nil
       end
     end

@@ -5,9 +5,21 @@ class Ditto::Base
   @update_path = ''
 
   def initialize(attrs = {})
+    if attrs['client']
+      @client = attrs['client']
+      attrs.delete('client')
+    end
+
     attrs.each do |key, value|
       send("#{key}=", value) if respond_to? key
     end
+  end
+
+  def self.find(id, opts = {})
+    client = opts[:client]
+    path = opts[:path].gsub('{id}', id)
+    response = client.get(path)
+    new(response)
   end
 
   def self.create(attrs = {})
@@ -43,11 +55,11 @@ class Ditto::Base
     self.class.attributes
   end
 
+  protected
   def client
     @client ||= Ditto::Client.new
   end
 
-  protected
   def to_hash
     attrs = {}
 

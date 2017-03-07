@@ -40,7 +40,6 @@ describe Ditto::Issuer do
       it 'succeed to create an issuer', :vcr do
         issuer = Ditto::Issuer.create(attributes)
         expect(issuer.id).to_not be_nil
-        expect(issuer.client.token).to_not be_nil
       end
     end
 
