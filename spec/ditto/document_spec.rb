@@ -87,8 +87,37 @@ describe Ditto::Document do
       end
     end
 
+    context 'document' do
+      let(:document) do
+        issuer.documents.create(attributes)
+      end
+
+      describe '#update' do
+        it 'document must have an update method', :vcr do
+          expect(document).to respond_to(:update)
+        end
+
+        it 'succeed to update an existing document', :vcr do
+          pending('https://github.com/ecaresoft/ditto/issues/1')
+          document.update({ name: 'Sifu' })
+          expect(document.name).to equal('Sife')
+        end
+      end
+
+      describe '#delete' do
+        it 'documents must have a delete method', :vcr do
+          expect(document).to respond_to(:delete)
+        end
+
+        it 'succeed to delete an existing document', :vcr do
+          response = document.delete
+          expect(response['status']).to equal(true)
+        end
+      end
+    end
+
     # describe '#all' do
-    #   # SearchDocumentList
+    #   # SearchDocumentList/{filters}
     # end
   end
 end

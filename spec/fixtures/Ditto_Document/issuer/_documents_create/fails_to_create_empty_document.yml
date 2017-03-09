@@ -31,23 +31,23 @@ http_interactions:
       Content-Length:
       - '1012'
       Date:
-      - Tue, 07 Mar 2017 23:32:46 GMT
+      - Thu, 09 Mar 2017 17:53:28 GMT
     body:
       encoding: UTF-8
-      string: '{"id":"A32B210","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMyQjIxMA==","production":false,"location":{"id":"A36B216","street":"calle
+      string: '{"id":"A30B268","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMwQjI2OA==","production":false,"location":{"id":"A34B274","street":"calle
         siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
-        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488929566000,"updated":1488929566000,"state":"DISTRITO
-        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A40B210","street":"AV.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489082008000,"updated":1489082008000,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A38B269","street":"AV.
         UNIVERSIDAD 4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO
-        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488929566000,"updated":1488929566000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1488929566000,"updated":1488929566000}'
+        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489082008000,"updated":1489082008000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489082008000,"updated":1489082008000}'
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 23:32:46 GMT
+  recorded_at: Thu, 09 Mar 2017 17:53:28 GMT
 - request:
     method: post
     uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/SaveEmisorConfigurationMaster/Configuration?UserId=benoror
     body:
       encoding: UTF-8
-      string: '{"emisorId":"A32B210","sessionDuration":24}'
+      string: '{"emisorId":"A30B268","sessionDuration":24}'
     headers:
       User-Agent:
       - Faraday v0.11.0
@@ -69,15 +69,15 @@ http_interactions:
       Content-Length:
       - '69'
       Date:
-      - Tue, 07 Mar 2017 23:32:46 GMT
+      - Thu, 09 Mar 2017 17:53:28 GMT
     body:
       encoding: UTF-8
       string: '{"status":true,"errors":[],"dataName":"EmisorConfiguration","ids":[]}'
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 23:32:46 GMT
+  recorded_at: Thu, 09 Mar 2017 17:53:29 GMT
 - request:
     method: get
-    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/InitApi?Key=QTMyQjIxMA==&UserId=benoror
+    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/InitApi?Key=QTMwQjI2OA==&UserId=benoror
     body:
       encoding: US-ASCII
       string: ''
@@ -102,15 +102,15 @@ http_interactions:
       Content-Length:
       - '315'
       Date:
-      - Tue, 07 Mar 2017 23:32:46 GMT
+      - Thu, 09 Mar 2017 17:53:28 GMT
     body:
       encoding: UTF-8
-      string: '{"status":true,"token":"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzI6MjEwIiwiaWF0IjoxNDg4OTI5NTY2LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTAxNTk2Nn0.P0aayb6R50JnE1xvttonA5M6KSWNOzUx0QP4ORR4OCLhSs_nZ0jqHZT-g-t4yy5cpq5UhY0prrCdqNbH8o2RtA","user":"benoror","expiration":1489015966823,"emisor":null}'
+      string: '{"status":true,"token":"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MjY4IiwiaWF0IjoxNDg5MDgyMDA5LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTE2ODQwOX0.weSc2z5NnzXKwVZZfi8ONLZWdmJNRUBXCm367CYulMs5f3T1qPfIKaLWgZ1SwXqZjo0yTVSo3njAVUiVEHSxCw","user":"benoror","expiration":1489168409179,"emisor":null}'
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 23:32:46 GMT
+  recorded_at: Thu, 09 Mar 2017 17:53:29 GMT
 - request:
     method: post
-    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/SaveDocument/document?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzI6MjEwIiwiaWF0IjoxNDg4OTI5NTY2LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTAxNTk2Nn0.P0aayb6R50JnE1xvttonA5M6KSWNOzUx0QP4ORR4OCLhSs_nZ0jqHZT-g-t4yy5cpq5UhY0prrCdqNbH8o2RtA
+    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/SaveDocument/document?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MjY4IiwiaWF0IjoxNDg5MDgyMDA5LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTE2ODQwOX0.weSc2z5NnzXKwVZZfi8ONLZWdmJNRUBXCm367CYulMs5f3T1qPfIKaLWgZ1SwXqZjo0yTVSo3njAVUiVEHSxCw
     body:
       encoding: UTF-8
       string: "{}"
@@ -137,7 +137,7 @@ http_interactions:
       Content-Length:
       - '7675'
       Date:
-      - Tue, 07 Mar 2017 23:32:46 GMT
+      - Thu, 09 Mar 2017 17:53:28 GMT
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -313,5 +313,5 @@ http_interactions:
         Ny48L3U+PC9wPjxociBjbGFzcz0ibGluZSI+PGgzPkFwYWNoZSBUb21jYXQv
         OC4wLjI3PC9oMz48L2JvZHk+PC9odG1sPg==
     http_version: 
-  recorded_at: Tue, 07 Mar 2017 23:32:47 GMT
+  recorded_at: Thu, 09 Mar 2017 17:53:29 GMT
 recorded_with: VCR 3.0.3

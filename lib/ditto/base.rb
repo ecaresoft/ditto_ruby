@@ -3,6 +3,7 @@ require 'ditto/client'
 class Ditto::Base
   @create_path = ''
   @update_path = ''
+  @delete_path = ''
 
   def initialize(attrs = {})
     if attrs['client']
@@ -26,6 +27,18 @@ class Ditto::Base
     instance = new(attrs)
     instance.save
     instance
+  end
+
+  def update(attrs = {})
+    attrs.each do |key, value|
+      send("#{key}=", value) if respond_to? key
+    end
+    save
+    self
+  end
+
+  def delete
+    client.get(@delete_path)
   end
 
   def save

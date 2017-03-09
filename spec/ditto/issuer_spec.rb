@@ -51,11 +51,17 @@ describe Ditto::Issuer do
     end
   end
 
-  describe '#retrieve' do
-    it 'retrieves an issuer' do
+  describe '#find' do
+    it 'fails to find an unknown issuer' do
       pending('pending to implement')
-      issuer = Ditto::Issuer.retrieve(attributes[:id])
-      expect(issuer.id).to_not be_nil
+      expect { Ditto::Issuer.find('123') }.to raise_error(Faraday::ClientError)
+    end
+
+    it 'succeed to find an issuer' do
+      pending('pending to implement')
+      issuer1 = Ditto::Issuer.create(attributes)
+      issuer2 = Ditto::Issuer.find(issuer1.id)
+      expect(issuer2.id).to_not be_nil
     end
   end
 end

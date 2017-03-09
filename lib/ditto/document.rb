@@ -7,6 +7,12 @@ class Ditto::Document < Ditto::Base
 
   def initialize(attrs = {})
     super(attrs)
-    @create_path = "SaveDocument/document?Token=#{client.token}"
+    @create_path =
+      @update_path = "SaveDocument/document?Token=#{client.token}"
+  end
+
+  def delete
+    @delete_path = "DeleteDocument/#{id}?Token=#{client.token}"
+    super
   end
 end
