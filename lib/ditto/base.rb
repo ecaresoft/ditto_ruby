@@ -1,10 +1,6 @@
 require 'ditto/client'
 
 class Ditto::Base
-  @create_path = ''
-  @update_path = ''
-  @delete_path = ''
-
   def initialize(attrs = {})
     if attrs['client']
       @client = attrs['client']
@@ -38,15 +34,15 @@ class Ditto::Base
   end
 
   def delete
-    client.get(@delete_path)
+    client.get(delete_path)
   end
 
   def save
     response =
       if id.nil?
-        client.post(@create_path, to_hash)
+        client.post(create_path, to_hash)
       else
-        client.put(@update_path, to_hash)
+        client.put(update_path, to_hash)
       end
 
     response.each do |key, value|
@@ -82,5 +78,17 @@ class Ditto::Base
     end
 
     attrs
+  end
+
+  def create_path
+    ''
+  end
+
+  def update_path
+    ''
+  end
+
+  def delete_path
+    ''
   end
 end

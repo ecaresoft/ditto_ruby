@@ -5,14 +5,16 @@ class Ditto::Document < Ditto::Base
                 :paymentForm, :voucherType, :paymentMethod, :expeditionPlace,
                 :subTotal, :total, :active
 
-  def initialize(attrs = {})
-    super(attrs)
-    @create_path =
-      @update_path = "SaveDocument/document?Token=#{client.token}"
+  private
+  def create_path
+    "SaveDocument/document?Token=#{client.token}"
   end
 
-  def delete
-    @delete_path = "DeleteDocument/#{id}?Token=#{client.token}"
-    super
+  def update_path
+    "SaveDocument/document?Token=#{client.token}"
+  end
+
+  def delete_path
+    "DeleteDocument/#{id}?Token=#{client.token}"
   end
 end
