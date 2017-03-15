@@ -42,7 +42,8 @@ class Ditto::Base
       if id.nil?
         client.post(create_path, to_hash)
       else
-        client.put(update_path, to_hash)
+        # Ditto uses POST for updating documents 8`(
+        client.post(update_path, to_hash)
       end
 
     response.each do |key, value|

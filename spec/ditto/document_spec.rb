@@ -98,9 +98,9 @@ describe Ditto::Document do
         end
 
         it 'succeed to update an existing document', :vcr do
-          pending('https://github.com/ecaresoft/ditto/issues/1')
-          document.update({ name: 'Sifu' })
-          expect(document.name).to equal('Sife')
+          old = document.documentNo
+          document.update({ documentNo: '879' })
+          expect(document.documentNo).to_not eq(old)
         end
       end
 

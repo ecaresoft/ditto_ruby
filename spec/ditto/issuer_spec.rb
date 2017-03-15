@@ -52,12 +52,12 @@ describe Ditto::Issuer do
   end
 
   describe '#find' do
-    it 'fails to find an unknown issuer' do
+    it 'fails to find an unknown issuer', :vcr do
       pending('pending to implement')
       expect { Ditto::Issuer.find('123') }.to raise_error(Faraday::ClientError)
     end
 
-    it 'succeed to find an issuer' do
+    it 'succeed to find an issuer', :vcr do
       pending('pending to implement')
       issuer1 = Ditto::Issuer.create(attributes)
       issuer2 = Ditto::Issuer.find(issuer1.id)
