@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/SaveEmisorMaster/Emisor?UserId=benoror
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SaveEmisorMaster/Emisor?UserId=benoror
     body:
       encoding: UTF-8
       string: '{"name":"Benjamin Orozco Rios","regimen":"simplificado","userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","production":false,"location":{"street":"calle
@@ -22,165 +22,45 @@ http_interactions:
   response:
     status:
       code: 500
-      message: Error Interno del Servidor
+      message: Internal Server Error
     headers:
       Server:
       - Apache-Coyote/1.1
       Content-Type:
       - text/html;charset=utf-8
       Content-Language:
-      - es
+      - en
       Content-Length:
-      - '6465'
+      - '6085'
       Date:
-      - Wed, 15 Mar 2017 17:10:31 GMT
+      - Wed, 15 Mar 2017 23:52:16 GMT
+      Connection:
+      - close
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        PCFET0NUWVBFIGh0bWw+PGh0bWw+PGhlYWQ+PHRpdGxlPkFwYWNoZSBUb21j
-        YXQvOC4wLjI3IC0gSW5mb3JtZSBkZSBFcnJvcjwvdGl0bGU+PHN0eWxlIHR5
-        cGU9InRleHQvY3NzIj5IMSB7Zm9udC1mYW1pbHk6VGFob21hLEFyaWFsLHNh
-        bnMtc2VyaWY7Y29sb3I6d2hpdGU7YmFja2dyb3VuZC1jb2xvcjojNTI1RDc2
-        O2ZvbnQtc2l6ZToyMnB4O30gSDIge2ZvbnQtZmFtaWx5OlRhaG9tYSxBcmlh
-        bCxzYW5zLXNlcmlmO2NvbG9yOndoaXRlO2JhY2tncm91bmQtY29sb3I6IzUy
-        NUQ3Njtmb250LXNpemU6MTZweDt9IEgzIHtmb250LWZhbWlseTpUYWhvbWEs
-        QXJpYWwsc2Fucy1zZXJpZjtjb2xvcjp3aGl0ZTtiYWNrZ3JvdW5kLWNvbG9y
-        OiM1MjVENzY7Zm9udC1zaXplOjE0cHg7fSBCT0RZIHtmb250LWZhbWlseTpU
-        YWhvbWEsQXJpYWwsc2Fucy1zZXJpZjtjb2xvcjpibGFjaztiYWNrZ3JvdW5k
-        LWNvbG9yOndoaXRlO30gQiB7Zm9udC1mYW1pbHk6VGFob21hLEFyaWFsLHNh
-        bnMtc2VyaWY7Y29sb3I6d2hpdGU7YmFja2dyb3VuZC1jb2xvcjojNTI1RDc2
-        O30gUCB7Zm9udC1mYW1pbHk6VGFob21hLEFyaWFsLHNhbnMtc2VyaWY7YmFj
-        a2dyb3VuZDp3aGl0ZTtjb2xvcjpibGFjaztmb250LXNpemU6MTJweDt9QSB7
-        Y29sb3IgOiBibGFjazt9QS5uYW1lIHtjb2xvciA6IGJsYWNrO30ubGluZSB7
-        aGVpZ2h0OiAxcHg7IGJhY2tncm91bmQtY29sb3I6ICM1MjVENzY7IGJvcmRl
-        cjogbm9uZTt9PC9zdHlsZT4gPC9oZWFkPjxib2R5PjxoMT5Fc3RhZG8gSFRU
-        UCA1MDAgLSBvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIuQ29udGFpbmVy
-        RXhjZXB0aW9uOiBjb20uZWNhcmVzb2Z0LmZhY3R1cmFjaW9uLmFwaS5lbnRp
-        dHkuYmVhbi5NeUV4Y2VwdGlvbjogW0VsIFJGQyBlcyBvYmxpZ2F0b3Jpb108
-        L2gxPjxkaXYgY2xhc3M9ImxpbmUiPjwvZGl2PjxwPjxiPnR5cGU8L2I+IElu
-        Zm9ybWUgZGUgRXhjZXBjacOzbjwvcD48cD48Yj5tZW5zYWplPC9iPiA8dT5v
-        cmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIuQ29udGFpbmVyRXhjZXB0aW9u
-        OiBjb20uZWNhcmVzb2Z0LmZhY3R1cmFjaW9uLmFwaS5lbnRpdHkuYmVhbi5N
-        eUV4Y2VwdGlvbjogW0VsIFJGQyBlcyBvYmxpZ2F0b3Jpb108L3U+PC9wPjxw
-        PjxiPmRlc2NyaXBjacOzbjwvYj4gPHU+RWwgc2Vydmlkb3IgZW5jb250csOz
-        IHVuIGVycm9yIGludGVybm8gcXVlIGhpem8gcXVlIG5vIHB1ZGllcmEgcmVs
-        bGVuYXIgZXN0ZSByZXF1ZXJpbWllbnRvLjwvdT48L3A+PHA+PGI+ZXhjZXBj
-        acOzbjwvYj48L3A+PHByZT5qYXZheC5zZXJ2bGV0LlNlcnZsZXRFeGNlcHRp
-        b246IG9yZy5nbGFzc2Zpc2guamVyc2V5LnNlcnZlci5Db250YWluZXJFeGNl
-        cHRpb246IGNvbS5lY2FyZXNvZnQuZmFjdHVyYWNpb24uYXBpLmVudGl0eS5i
-        ZWFuLk15RXhjZXB0aW9uOiBbRWwgUkZDIGVzIG9ibGlnYXRvcmlvXQoJb3Jn
-        LmdsYXNzZmlzaC5qZXJzZXkuc2VydmxldC5XZWJDb21wb25lbnQuc2Vydmlj
-        ZUltcGwoV2ViQ29tcG9uZW50LmphdmE6NDg3KQoJb3JnLmdsYXNzZmlzaC5q
-        ZXJzZXkuc2VydmxldC5XZWJDb21wb25lbnQuc2VydmljZShXZWJDb21wb25l
-        bnQuamF2YTo0MjUpCglvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2bGV0LlNl
-        cnZsZXRDb250YWluZXIuc2VydmljZShTZXJ2bGV0Q29udGFpbmVyLmphdmE6
-        MzgzKQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmxldC5TZXJ2bGV0Q29u
-        dGFpbmVyLnNlcnZpY2UoU2VydmxldENvbnRhaW5lci5qYXZhOjMzNikKCW9y
-        Zy5nbGFzc2Zpc2guamVyc2V5LnNlcnZsZXQuU2VydmxldENvbnRhaW5lci5z
-        ZXJ2aWNlKFNlcnZsZXRDb250YWluZXIuamF2YToyMjMpCglvcmcuYXBhY2hl
-        LnRvbWNhdC53ZWJzb2NrZXQuc2VydmVyLldzRmlsdGVyLmRvRmlsdGVyKFdz
-        RmlsdGVyLmphdmE6NTIpCglvcmcubmV0YmVhbnMubW9kdWxlcy53ZWIubW9u
-        aXRvci5zZXJ2ZXIuTW9uaXRvckZpbHRlci5kb0ZpbHRlcihNb25pdG9yRmls
-        dGVyLmphdmE6MzkzKQo8L3ByZT48cD48Yj5jYXVzYSByYcOtejwvYj48L3A+
-        PHByZT5vcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIuQ29udGFpbmVyRXhj
-        ZXB0aW9uOiBjb20uZWNhcmVzb2Z0LmZhY3R1cmFjaW9uLmFwaS5lbnRpdHku
-        YmVhbi5NeUV4Y2VwdGlvbjogW0VsIFJGQyBlcyBvYmxpZ2F0b3Jpb10KCW9y
-        Zy5nbGFzc2Zpc2guamVyc2V5LnNlcnZsZXQuaW50ZXJuYWwuUmVzcG9uc2VX
-        cml0ZXIucmV0aHJvdyhSZXNwb25zZVdyaXRlci5qYXZhOjI3OCkKCW9yZy5n
-        bGFzc2Zpc2guamVyc2V5LnNlcnZsZXQuaW50ZXJuYWwuUmVzcG9uc2VXcml0
-        ZXIuZmFpbHVyZShSZXNwb25zZVdyaXRlci5qYXZhOjI2MCkKCW9yZy5nbGFz
-        c2Zpc2guamVyc2V5LnNlcnZlci5TZXJ2ZXJSdW50aW1lJFJlc3BvbmRlci5w
-        cm9jZXNzKFNlcnZlclJ1bnRpbWUuamF2YTo1MDkpCglvcmcuZ2xhc3NmaXNo
-        LmplcnNleS5zZXJ2ZXIuU2VydmVyUnVudGltZSQyLnJ1bihTZXJ2ZXJSdW50
-        aW1lLmphdmE6MzM0KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuaW50ZXJuYWwu
-        RXJyb3JzJDEuY2FsbChFcnJvcnMuamF2YToyNzEpCglvcmcuZ2xhc3NmaXNo
-        LmplcnNleS5pbnRlcm5hbC5FcnJvcnMkMS5jYWxsKEVycm9ycy5qYXZhOjI2
-        NykKCW9yZy5nbGFzc2Zpc2guamVyc2V5LmludGVybmFsLkVycm9ycy5wcm9j
-        ZXNzKEVycm9ycy5qYXZhOjMxNSkKCW9yZy5nbGFzc2Zpc2guamVyc2V5Lmlu
-        dGVybmFsLkVycm9ycy5wcm9jZXNzKEVycm9ycy5qYXZhOjI5NykKCW9yZy5n
-        bGFzc2Zpc2guamVyc2V5LmludGVybmFsLkVycm9ycy5wcm9jZXNzKEVycm9y
-        cy5qYXZhOjI2NykKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnByb2Nlc3MuaW50
-        ZXJuYWwuUmVxdWVzdFNjb3BlLnJ1bkluU2NvcGUoUmVxdWVzdFNjb3BlLmph
-        dmE6MzE3KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmVyLlNlcnZlclJ1
-        bnRpbWUucHJvY2VzcyhTZXJ2ZXJSdW50aW1lLmphdmE6MzA1KQoJb3JnLmds
-        YXNzZmlzaC5qZXJzZXkuc2VydmVyLkFwcGxpY2F0aW9uSGFuZGxlci5oYW5k
-        bGUoQXBwbGljYXRpb25IYW5kbGVyLmphdmE6MTE1NCkKCW9yZy5nbGFzc2Zp
-        c2guamVyc2V5LnNlcnZsZXQuV2ViQ29tcG9uZW50LnNlcnZpY2VJbXBsKFdl
-        YkNvbXBvbmVudC5qYXZhOjQ3MSkKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnNl
-        cnZsZXQuV2ViQ29tcG9uZW50LnNlcnZpY2UoV2ViQ29tcG9uZW50LmphdmE6
-        NDI1KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmxldC5TZXJ2bGV0Q29u
-        dGFpbmVyLnNlcnZpY2UoU2VydmxldENvbnRhaW5lci5qYXZhOjM4MykKCW9y
-        Zy5nbGFzc2Zpc2guamVyc2V5LnNlcnZsZXQuU2VydmxldENvbnRhaW5lci5z
-        ZXJ2aWNlKFNlcnZsZXRDb250YWluZXIuamF2YTozMzYpCglvcmcuZ2xhc3Nm
-        aXNoLmplcnNleS5zZXJ2bGV0LlNlcnZsZXRDb250YWluZXIuc2VydmljZShT
-        ZXJ2bGV0Q29udGFpbmVyLmphdmE6MjIzKQoJb3JnLmFwYWNoZS50b21jYXQu
-        d2Vic29ja2V0LnNlcnZlci5Xc0ZpbHRlci5kb0ZpbHRlcihXc0ZpbHRlci5q
-        YXZhOjUyKQoJb3JnLm5ldGJlYW5zLm1vZHVsZXMud2ViLm1vbml0b3Iuc2Vy
-        dmVyLk1vbml0b3JGaWx0ZXIuZG9GaWx0ZXIoTW9uaXRvckZpbHRlci5qYXZh
-        OjM5MykKPC9wcmU+PHA+PGI+Y2F1c2EgcmHDrXo8L2I+PC9wPjxwcmU+Y29t
-        LmVjYXJlc29mdC5mYWN0dXJhY2lvbi5hcGkuZW50aXR5LmJlYW4uTXlFeGNl
-        cHRpb246IFtFbCBSRkMgZXMgb2JsaWdhdG9yaW9dCgljb20uZWNhcmVzb2Z0
-        LmZhY3R1cmFjaW9uLmFwaS53cy5JbnZvaWNlUmVzb3VyY2Uuc2F2ZUVtaXNv
-        ck1hc3RlcihJbnZvaWNlUmVzb3VyY2UuamF2YTozNDkpCglzdW4ucmVmbGVj
-        dC5OYXRpdmVNZXRob2RBY2Nlc3NvckltcGwuaW52b2tlMChOYXRpdmUgTWV0
-        aG9kKQoJc3VuLnJlZmxlY3QuTmF0aXZlTWV0aG9kQWNjZXNzb3JJbXBsLmlu
-        dm9rZShOYXRpdmVNZXRob2RBY2Nlc3NvckltcGwuamF2YTo2MikKCXN1bi5y
-        ZWZsZWN0LkRlbGVnYXRpbmdNZXRob2RBY2Nlc3NvckltcGwuaW52b2tlKERl
-        bGVnYXRpbmdNZXRob2RBY2Nlc3NvckltcGwuamF2YTo0MykKCWphdmEubGFu
-        Zy5yZWZsZWN0Lk1ldGhvZC5pbnZva2UoTWV0aG9kLmphdmE6NDk4KQoJb3Jn
-        LmdsYXNzZmlzaC5qZXJzZXkuc2VydmVyLm1vZGVsLmludGVybmFsLlJlc291
-        cmNlTWV0aG9kSW52b2NhdGlvbkhhbmRsZXJGYWN0b3J5JDEuaW52b2tlKFJl
-        c291cmNlTWV0aG9kSW52b2NhdGlvbkhhbmRsZXJGYWN0b3J5LmphdmE6ODEp
-        CglvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIubW9kZWwuaW50ZXJuYWwu
-        QWJzdHJhY3RKYXZhUmVzb3VyY2VNZXRob2REaXNwYXRjaGVyJDEucnVuKEFi
-        c3RyYWN0SmF2YVJlc291cmNlTWV0aG9kRGlzcGF0Y2hlci5qYXZhOjE0NCkK
-        CW9yZy5nbGFzc2Zpc2guamVyc2V5LnNlcnZlci5tb2RlbC5pbnRlcm5hbC5B
-        YnN0cmFjdEphdmFSZXNvdXJjZU1ldGhvZERpc3BhdGNoZXIuaW52b2tlKEFi
-        c3RyYWN0SmF2YVJlc291cmNlTWV0aG9kRGlzcGF0Y2hlci5qYXZhOjE2MSkK
-        CW9yZy5nbGFzc2Zpc2guamVyc2V5LnNlcnZlci5tb2RlbC5pbnRlcm5hbC5K
-        YXZhUmVzb3VyY2VNZXRob2REaXNwYXRjaGVyUHJvdmlkZXIkVHlwZU91dElu
-        dm9rZXIuZG9EaXNwYXRjaChKYXZhUmVzb3VyY2VNZXRob2REaXNwYXRjaGVy
-        UHJvdmlkZXIuamF2YToyMDUpCglvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2
-        ZXIubW9kZWwuaW50ZXJuYWwuQWJzdHJhY3RKYXZhUmVzb3VyY2VNZXRob2RE
-        aXNwYXRjaGVyLmRpc3BhdGNoKEFic3RyYWN0SmF2YVJlc291cmNlTWV0aG9k
-        RGlzcGF0Y2hlci5qYXZhOjk5KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2Vy
-        dmVyLm1vZGVsLlJlc291cmNlTWV0aG9kSW52b2tlci5pbnZva2UoUmVzb3Vy
-        Y2VNZXRob2RJbnZva2VyLmphdmE6Mzg5KQoJb3JnLmdsYXNzZmlzaC5qZXJz
-        ZXkuc2VydmVyLm1vZGVsLlJlc291cmNlTWV0aG9kSW52b2tlci5hcHBseShS
-        ZXNvdXJjZU1ldGhvZEludm9rZXIuamF2YTozNDcpCglvcmcuZ2xhc3NmaXNo
-        LmplcnNleS5zZXJ2ZXIubW9kZWwuUmVzb3VyY2VNZXRob2RJbnZva2VyLmFw
-        cGx5KFJlc291cmNlTWV0aG9kSW52b2tlci5qYXZhOjEwMikKCW9yZy5nbGFz
-        c2Zpc2guamVyc2V5LnNlcnZlci5TZXJ2ZXJSdW50aW1lJDIucnVuKFNlcnZl
-        clJ1bnRpbWUuamF2YTozMjYpCglvcmcuZ2xhc3NmaXNoLmplcnNleS5pbnRl
-        cm5hbC5FcnJvcnMkMS5jYWxsKEVycm9ycy5qYXZhOjI3MSkKCW9yZy5nbGFz
-        c2Zpc2guamVyc2V5LmludGVybmFsLkVycm9ycyQxLmNhbGwoRXJyb3JzLmph
-        dmE6MjY3KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuaW50ZXJuYWwuRXJyb3Jz
-        LnByb2Nlc3MoRXJyb3JzLmphdmE6MzE1KQoJb3JnLmdsYXNzZmlzaC5qZXJz
-        ZXkuaW50ZXJuYWwuRXJyb3JzLnByb2Nlc3MoRXJyb3JzLmphdmE6Mjk3KQoJ
-        b3JnLmdsYXNzZmlzaC5qZXJzZXkuaW50ZXJuYWwuRXJyb3JzLnByb2Nlc3Mo
-        RXJyb3JzLmphdmE6MjY3KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkucHJvY2Vz
-        cy5pbnRlcm5hbC5SZXF1ZXN0U2NvcGUucnVuSW5TY29wZShSZXF1ZXN0U2Nv
-        cGUuamF2YTozMTcpCglvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIuU2Vy
-        dmVyUnVudGltZS5wcm9jZXNzKFNlcnZlclJ1bnRpbWUuamF2YTozMDUpCglv
-        cmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIuQXBwbGljYXRpb25IYW5kbGVy
-        LmhhbmRsZShBcHBsaWNhdGlvbkhhbmRsZXIuamF2YToxMTU0KQoJb3JnLmds
-        YXNzZmlzaC5qZXJzZXkuc2VydmxldC5XZWJDb21wb25lbnQuc2VydmljZUlt
-        cGwoV2ViQ29tcG9uZW50LmphdmE6NDcxKQoJb3JnLmdsYXNzZmlzaC5qZXJz
-        ZXkuc2VydmxldC5XZWJDb21wb25lbnQuc2VydmljZShXZWJDb21wb25lbnQu
-        amF2YTo0MjUpCglvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2bGV0LlNlcnZs
-        ZXRDb250YWluZXIuc2VydmljZShTZXJ2bGV0Q29udGFpbmVyLmphdmE6Mzgz
-        KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmxldC5TZXJ2bGV0Q29udGFp
-        bmVyLnNlcnZpY2UoU2VydmxldENvbnRhaW5lci5qYXZhOjMzNikKCW9yZy5n
-        bGFzc2Zpc2guamVyc2V5LnNlcnZsZXQuU2VydmxldENvbnRhaW5lci5zZXJ2
-        aWNlKFNlcnZsZXRDb250YWluZXIuamF2YToyMjMpCglvcmcuYXBhY2hlLnRv
-        bWNhdC53ZWJzb2NrZXQuc2VydmVyLldzRmlsdGVyLmRvRmlsdGVyKFdzRmls
-        dGVyLmphdmE6NTIpCglvcmcubmV0YmVhbnMubW9kdWxlcy53ZWIubW9uaXRv
-        ci5zZXJ2ZXIuTW9uaXRvckZpbHRlci5kb0ZpbHRlcihNb25pdG9yRmlsdGVy
-        LmphdmE6MzkzKQo8L3ByZT48cD48Yj5ub3RhPC9iPiA8dT5MYSB0cmF6YSBj
-        b21wbGV0YSBkZSBsYSBjYXVzYSBkZSBlc3RlIGVycm9yIHNlIGVuY3VlbnRy
-        YSBlbiBsb3MgYXJjaGl2b3MgZGUgZGlhcmlvIGRlIEFwYWNoZSBUb21jYXQv
-        OC4wLjI3LjwvdT48L3A+PGhyIGNsYXNzPSJsaW5lIj48aDM+QXBhY2hlIFRv
-        bWNhdC84LjAuMjc8L2gzPjwvYm9keT48L2h0bWw+
+      encoding: UTF-8
+      string: "<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.41 - Error report</title><style
+        type=\"text/css\">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}.line {height: 1px; background-color:
+        #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - org.glassfish.jersey.server.ContainerException:
+        com.ecaresoft.facturacion.api.entity.bean.MyException: [El RFC es obligatorio]</h1><div
+        class=\"line\"></div><p><b>type</b> Exception report</p><p><b>message</b>
+        <u>org.glassfish.jersey.server.ContainerException: com.ecaresoft.facturacion.api.entity.bean.MyException:
+        [El RFC es obligatorio]</u></p><p><b>description</b> <u>The server encountered
+        an internal error that prevented it from fulfilling this request.</u></p><p><b>exception</b></p><pre>javax.servlet.ServletException:
+        org.glassfish.jersey.server.ContainerException: com.ecaresoft.facturacion.api.entity.bean.MyException:
+        [El RFC es obligatorio]\n\torg.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:487)\n\torg.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre><p><b>root
+        cause</b></p><pre>org.glassfish.jersey.server.ContainerException: com.ecaresoft.facturacion.api.entity.bean.MyException:
+        [El RFC es obligatorio]\n\torg.glassfish.jersey.servlet.internal.ResponseWriter.rethrow(ResponseWriter.java:278)\n\torg.glassfish.jersey.servlet.internal.ResponseWriter.failure(ResponseWriter.java:260)\n\torg.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:509)\n\torg.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:334)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:271)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:267)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:315)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:297)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:267)\n\torg.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)\n\torg.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)\n\torg.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)\n\torg.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471)\n\torg.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre><p><b>root
+        cause</b></p><pre>com.ecaresoft.facturacion.api.entity.bean.MyException: [El
+        RFC es obligatorio]\n\tcom.ecaresoft.facturacion.api.ws.InvoiceResource.saveEmisorMaster(InvoiceResource.java:349)\n\tsun.reflect.GeneratedMethodAccessor80.invoke(Unknown
+        Source)\n\tsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tjava.lang.reflect.Method.invoke(Method.java:498)\n\torg.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)\n\torg.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)\n\torg.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)\n\torg.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)\n\torg.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)\n\torg.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)\n\torg.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)\n\torg.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)\n\torg.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:271)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:267)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:315)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:297)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:267)\n\torg.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)\n\torg.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)\n\torg.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)\n\torg.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471)\n\torg.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre><p><b>note</b>
+        <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.41
+        logs.</u></p><hr class=\"line\"><h3>Apache Tomcat/8.0.41</h3></body></html>"
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 17:10:31 GMT
+  recorded_at: Wed, 15 Mar 2017 23:52:17 GMT
 recorded_with: VCR 3.0.3
