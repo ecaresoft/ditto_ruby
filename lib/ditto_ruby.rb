@@ -4,8 +4,8 @@ require 'ditto/document'
 
 module Ditto
   @api_key = 'benoror'
-  @base_url = 'http://d9d5452e.ngrok.io'
-  @base_path = '/Api/webresources/invoice'
+  @base_url = 'http://localhost:8080'
+  @base_path = '/Api-1.0-SNAPSHOT/webresources/invoice'
 
   class << self
     attr_accessor :api_key, :base_url, :base_path
