@@ -31,23 +31,23 @@ http_interactions:
       Content-Length:
       - '1012'
       Date:
-      - Thu, 09 Mar 2017 17:53:28 GMT
+      - Wed, 15 Mar 2017 17:10:21 GMT
     body:
       encoding: UTF-8
-      string: '{"id":"A30B268","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMwQjI2OA==","production":false,"location":{"id":"A34B274","street":"calle
+      string: '{"id":"A30B271","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMwQjI3MQ==","production":false,"location":{"id":"A34B277","street":"calle
         siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
-        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489082008000,"updated":1489082008000,"state":"DISTRITO
-        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A38B269","street":"AV.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489597822000,"updated":1489597822000,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A38B272","street":"AV.
         UNIVERSIDAD 4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO
-        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489082008000,"updated":1489082008000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489082008000,"updated":1489082008000}'
+        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489597822000,"updated":1489597822000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489597822000,"updated":1489597822000}'
     http_version: 
-  recorded_at: Thu, 09 Mar 2017 17:53:28 GMT
+  recorded_at: Wed, 15 Mar 2017 17:10:21 GMT
 - request:
     method: post
     uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/SaveEmisorConfigurationMaster/Configuration?UserId=benoror
     body:
       encoding: UTF-8
-      string: '{"emisorId":"A30B268","sessionDuration":24}'
+      string: '{"emisorId":"A30B271","sessionDuration":24}'
     headers:
       User-Agent:
       - Faraday v0.11.0
@@ -69,15 +69,15 @@ http_interactions:
       Content-Length:
       - '69'
       Date:
-      - Thu, 09 Mar 2017 17:53:28 GMT
+      - Wed, 15 Mar 2017 17:10:21 GMT
     body:
       encoding: UTF-8
-      string: '{"status":true,"errors":[],"dataName":"EmisorConfiguration","ids":[]}'
+      string: '{"status":true,"errors":[],"ids":[],"dataName":"EmisorConfiguration"}'
     http_version: 
-  recorded_at: Thu, 09 Mar 2017 17:53:29 GMT
+  recorded_at: Wed, 15 Mar 2017 17:10:22 GMT
 - request:
     method: get
-    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/InitApi?Key=QTMwQjI2OA==&UserId=benoror
+    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/InitApi?Key=QTMwQjI3MQ==&UserId=benoror
     body:
       encoding: US-ASCII
       string: ''
@@ -102,15 +102,15 @@ http_interactions:
       Content-Length:
       - '315'
       Date:
-      - Thu, 09 Mar 2017 17:53:28 GMT
+      - Wed, 15 Mar 2017 17:10:22 GMT
     body:
       encoding: UTF-8
-      string: '{"status":true,"token":"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MjY4IiwiaWF0IjoxNDg5MDgyMDA5LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTE2ODQwOX0.weSc2z5NnzXKwVZZfi8ONLZWdmJNRUBXCm367CYulMs5f3T1qPfIKaLWgZ1SwXqZjo0yTVSo3njAVUiVEHSxCw","user":"benoror","expiration":1489168409179,"emisor":null}'
+      string: '{"status":true,"token":"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MjcxIiwiaWF0IjoxNDg5NTk3ODIyLCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTY4NDIyMn0.iEVR0kfWlXuH9TKD91x7Td_el7KC3wmGA6qmwBSQ9ovZXgoL5kdyt3dyhdVSilK3pPIIjK20d8c292bi6c6MLg","user":"benoror","expiration":1489684222532,"emisor":null}'
     http_version: 
-  recorded_at: Thu, 09 Mar 2017 17:53:29 GMT
+  recorded_at: Wed, 15 Mar 2017 17:10:22 GMT
 - request:
     method: post
-    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/SaveDocument/document?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MjY4IiwiaWF0IjoxNDg5MDgyMDA5LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTE2ODQwOX0.weSc2z5NnzXKwVZZfi8ONLZWdmJNRUBXCm367CYulMs5f3T1qPfIKaLWgZ1SwXqZjo0yTVSo3njAVUiVEHSxCw
+    uri: http://d9d5452e.ngrok.io/Api/webresources/invoice/SaveDocument/document?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MjcxIiwiaWF0IjoxNDg5NTk3ODIyLCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTY4NDIyMn0.iEVR0kfWlXuH9TKD91x7Td_el7KC3wmGA6qmwBSQ9ovZXgoL5kdyt3dyhdVSilK3pPIIjK20d8c292bi6c6MLg
     body:
       encoding: UTF-8
       string: "{}"
@@ -135,9 +135,9 @@ http_interactions:
       Content-Language:
       - es
       Content-Length:
-      - '7675'
+      - '7752'
       Date:
-      - Thu, 09 Mar 2017 17:53:28 GMT
+      - Wed, 15 Mar 2017 17:10:22 GMT
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -254,64 +254,66 @@ http_interactions:
         eHBlZGljacODxpLDgsKzbiBlcyBvYmxpZ2F0b3JpbywgUmVjZXB0b3Igbm8g
         cHVlZGUgc2VyIG51bG9dCgljb20uZWNhcmVzb2Z0LmZhY3R1cmFjaW9uLmFw
         aS53cy5JbnZvaWNlUmVzb3VyY2Uuc2F2ZURvY3VtZW50KEludm9pY2VSZXNv
-        dXJjZS5qYXZhOjEzOTMpCglzdW4ucmVmbGVjdC5HZW5lcmF0ZWRNZXRob2RB
-        Y2Nlc3NvcjEzMi5pbnZva2UoVW5rbm93biBTb3VyY2UpCglzdW4ucmVmbGVj
-        dC5EZWxlZ2F0aW5nTWV0aG9kQWNjZXNzb3JJbXBsLmludm9rZShEZWxlZ2F0
-        aW5nTWV0aG9kQWNjZXNzb3JJbXBsLmphdmE6NDMpCglqYXZhLmxhbmcucmVm
-        bGVjdC5NZXRob2QuaW52b2tlKE1ldGhvZC5qYXZhOjQ5OCkKCW9yZy5nbGFz
-        c2Zpc2guamVyc2V5LnNlcnZlci5tb2RlbC5pbnRlcm5hbC5SZXNvdXJjZU1l
-        dGhvZEludm9jYXRpb25IYW5kbGVyRmFjdG9yeSQxLmludm9rZShSZXNvdXJj
-        ZU1ldGhvZEludm9jYXRpb25IYW5kbGVyRmFjdG9yeS5qYXZhOjgxKQoJb3Jn
-        LmdsYXNzZmlzaC5qZXJzZXkuc2VydmVyLm1vZGVsLmludGVybmFsLkFic3Ry
-        YWN0SmF2YVJlc291cmNlTWV0aG9kRGlzcGF0Y2hlciQxLnJ1bihBYnN0cmFj
-        dEphdmFSZXNvdXJjZU1ldGhvZERpc3BhdGNoZXIuamF2YToxNDQpCglvcmcu
-        Z2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIubW9kZWwuaW50ZXJuYWwuQWJzdHJh
-        Y3RKYXZhUmVzb3VyY2VNZXRob2REaXNwYXRjaGVyLmludm9rZShBYnN0cmFj
-        dEphdmFSZXNvdXJjZU1ldGhvZERpc3BhdGNoZXIuamF2YToxNjEpCglvcmcu
-        Z2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIubW9kZWwuaW50ZXJuYWwuSmF2YVJl
-        c291cmNlTWV0aG9kRGlzcGF0Y2hlclByb3ZpZGVyJFR5cGVPdXRJbnZva2Vy
-        LmRvRGlzcGF0Y2goSmF2YVJlc291cmNlTWV0aG9kRGlzcGF0Y2hlclByb3Zp
-        ZGVyLmphdmE6MjA1KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmVyLm1v
-        ZGVsLmludGVybmFsLkFic3RyYWN0SmF2YVJlc291cmNlTWV0aG9kRGlzcGF0
-        Y2hlci5kaXNwYXRjaChBYnN0cmFjdEphdmFSZXNvdXJjZU1ldGhvZERpc3Bh
-        dGNoZXIuamF2YTo5OSkKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnNlcnZlci5t
-        b2RlbC5SZXNvdXJjZU1ldGhvZEludm9rZXIuaW52b2tlKFJlc291cmNlTWV0
-        aG9kSW52b2tlci5qYXZhOjM4OSkKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnNl
-        cnZlci5tb2RlbC5SZXNvdXJjZU1ldGhvZEludm9rZXIuYXBwbHkoUmVzb3Vy
-        Y2VNZXRob2RJbnZva2VyLmphdmE6MzQ3KQoJb3JnLmdsYXNzZmlzaC5qZXJz
-        ZXkuc2VydmVyLm1vZGVsLlJlc291cmNlTWV0aG9kSW52b2tlci5hcHBseShS
-        ZXNvdXJjZU1ldGhvZEludm9rZXIuamF2YToxMDIpCglvcmcuZ2xhc3NmaXNo
-        LmplcnNleS5zZXJ2ZXIuU2VydmVyUnVudGltZSQyLnJ1bihTZXJ2ZXJSdW50
-        aW1lLmphdmE6MzI2KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuaW50ZXJuYWwu
-        RXJyb3JzJDEuY2FsbChFcnJvcnMuamF2YToyNzEpCglvcmcuZ2xhc3NmaXNo
-        LmplcnNleS5pbnRlcm5hbC5FcnJvcnMkMS5jYWxsKEVycm9ycy5qYXZhOjI2
-        NykKCW9yZy5nbGFzc2Zpc2guamVyc2V5LmludGVybmFsLkVycm9ycy5wcm9j
-        ZXNzKEVycm9ycy5qYXZhOjMxNSkKCW9yZy5nbGFzc2Zpc2guamVyc2V5Lmlu
-        dGVybmFsLkVycm9ycy5wcm9jZXNzKEVycm9ycy5qYXZhOjI5NykKCW9yZy5n
-        bGFzc2Zpc2guamVyc2V5LmludGVybmFsLkVycm9ycy5wcm9jZXNzKEVycm9y
-        cy5qYXZhOjI2NykKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnByb2Nlc3MuaW50
-        ZXJuYWwuUmVxdWVzdFNjb3BlLnJ1bkluU2NvcGUoUmVxdWVzdFNjb3BlLmph
-        dmE6MzE3KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmVyLlNlcnZlclJ1
-        bnRpbWUucHJvY2VzcyhTZXJ2ZXJSdW50aW1lLmphdmE6MzA1KQoJb3JnLmds
-        YXNzZmlzaC5qZXJzZXkuc2VydmVyLkFwcGxpY2F0aW9uSGFuZGxlci5oYW5k
-        bGUoQXBwbGljYXRpb25IYW5kbGVyLmphdmE6MTE1NCkKCW9yZy5nbGFzc2Zp
-        c2guamVyc2V5LnNlcnZsZXQuV2ViQ29tcG9uZW50LnNlcnZpY2VJbXBsKFdl
-        YkNvbXBvbmVudC5qYXZhOjQ3MSkKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnNl
-        cnZsZXQuV2ViQ29tcG9uZW50LnNlcnZpY2UoV2ViQ29tcG9uZW50LmphdmE6
-        NDI1KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmxldC5TZXJ2bGV0Q29u
-        dGFpbmVyLnNlcnZpY2UoU2VydmxldENvbnRhaW5lci5qYXZhOjM4MykKCW9y
-        Zy5nbGFzc2Zpc2guamVyc2V5LnNlcnZsZXQuU2VydmxldENvbnRhaW5lci5z
-        ZXJ2aWNlKFNlcnZsZXRDb250YWluZXIuamF2YTozMzYpCglvcmcuZ2xhc3Nm
-        aXNoLmplcnNleS5zZXJ2bGV0LlNlcnZsZXRDb250YWluZXIuc2VydmljZShT
-        ZXJ2bGV0Q29udGFpbmVyLmphdmE6MjIzKQoJb3JnLmFwYWNoZS50b21jYXQu
-        d2Vic29ja2V0LnNlcnZlci5Xc0ZpbHRlci5kb0ZpbHRlcihXc0ZpbHRlci5q
-        YXZhOjUyKQoJb3JnLm5ldGJlYW5zLm1vZHVsZXMud2ViLm1vbml0b3Iuc2Vy
-        dmVyLk1vbml0b3JGaWx0ZXIuZG9GaWx0ZXIoTW9uaXRvckZpbHRlci5qYXZh
-        OjM5MykKPC9wcmU+PHA+PGI+bm90YTwvYj4gPHU+TGEgdHJhemEgY29tcGxl
-        dGEgZGUgbGEgY2F1c2EgZGUgZXN0ZSBlcnJvciBzZSBlbmN1ZW50cmEgZW4g
-        bG9zIGFyY2hpdm9zIGRlIGRpYXJpbyBkZSBBcGFjaGUgVG9tY2F0LzguMC4y
-        Ny48L3U+PC9wPjxociBjbGFzcz0ibGluZSI+PGgzPkFwYWNoZSBUb21jYXQv
-        OC4wLjI3PC9oMz48L2JvZHk+PC9odG1sPg==
+        dXJjZS5qYXZhOjEzOTYpCglzdW4ucmVmbGVjdC5OYXRpdmVNZXRob2RBY2Nl
+        c3NvckltcGwuaW52b2tlMChOYXRpdmUgTWV0aG9kKQoJc3VuLnJlZmxlY3Qu
+        TmF0aXZlTWV0aG9kQWNjZXNzb3JJbXBsLmludm9rZShOYXRpdmVNZXRob2RB
+        Y2Nlc3NvckltcGwuamF2YTo2MikKCXN1bi5yZWZsZWN0LkRlbGVnYXRpbmdN
+        ZXRob2RBY2Nlc3NvckltcGwuaW52b2tlKERlbGVnYXRpbmdNZXRob2RBY2Nl
+        c3NvckltcGwuamF2YTo0MykKCWphdmEubGFuZy5yZWZsZWN0Lk1ldGhvZC5p
+        bnZva2UoTWV0aG9kLmphdmE6NDk4KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXku
+        c2VydmVyLm1vZGVsLmludGVybmFsLlJlc291cmNlTWV0aG9kSW52b2NhdGlv
+        bkhhbmRsZXJGYWN0b3J5JDEuaW52b2tlKFJlc291cmNlTWV0aG9kSW52b2Nh
+        dGlvbkhhbmRsZXJGYWN0b3J5LmphdmE6ODEpCglvcmcuZ2xhc3NmaXNoLmpl
+        cnNleS5zZXJ2ZXIubW9kZWwuaW50ZXJuYWwuQWJzdHJhY3RKYXZhUmVzb3Vy
+        Y2VNZXRob2REaXNwYXRjaGVyJDEucnVuKEFic3RyYWN0SmF2YVJlc291cmNl
+        TWV0aG9kRGlzcGF0Y2hlci5qYXZhOjE0NCkKCW9yZy5nbGFzc2Zpc2guamVy
+        c2V5LnNlcnZlci5tb2RlbC5pbnRlcm5hbC5BYnN0cmFjdEphdmFSZXNvdXJj
+        ZU1ldGhvZERpc3BhdGNoZXIuaW52b2tlKEFic3RyYWN0SmF2YVJlc291cmNl
+        TWV0aG9kRGlzcGF0Y2hlci5qYXZhOjE2MSkKCW9yZy5nbGFzc2Zpc2guamVy
+        c2V5LnNlcnZlci5tb2RlbC5pbnRlcm5hbC5KYXZhUmVzb3VyY2VNZXRob2RE
+        aXNwYXRjaGVyUHJvdmlkZXIkVHlwZU91dEludm9rZXIuZG9EaXNwYXRjaChK
+        YXZhUmVzb3VyY2VNZXRob2REaXNwYXRjaGVyUHJvdmlkZXIuamF2YToyMDUp
+        CglvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIubW9kZWwuaW50ZXJuYWwu
+        QWJzdHJhY3RKYXZhUmVzb3VyY2VNZXRob2REaXNwYXRjaGVyLmRpc3BhdGNo
+        KEFic3RyYWN0SmF2YVJlc291cmNlTWV0aG9kRGlzcGF0Y2hlci5qYXZhOjk5
+        KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmVyLm1vZGVsLlJlc291cmNl
+        TWV0aG9kSW52b2tlci5pbnZva2UoUmVzb3VyY2VNZXRob2RJbnZva2VyLmph
+        dmE6Mzg5KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmVyLm1vZGVsLlJl
+        c291cmNlTWV0aG9kSW52b2tlci5hcHBseShSZXNvdXJjZU1ldGhvZEludm9r
+        ZXIuamF2YTozNDcpCglvcmcuZ2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIubW9k
+        ZWwuUmVzb3VyY2VNZXRob2RJbnZva2VyLmFwcGx5KFJlc291cmNlTWV0aG9k
+        SW52b2tlci5qYXZhOjEwMikKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnNlcnZl
+        ci5TZXJ2ZXJSdW50aW1lJDIucnVuKFNlcnZlclJ1bnRpbWUuamF2YTozMjYp
+        CglvcmcuZ2xhc3NmaXNoLmplcnNleS5pbnRlcm5hbC5FcnJvcnMkMS5jYWxs
+        KEVycm9ycy5qYXZhOjI3MSkKCW9yZy5nbGFzc2Zpc2guamVyc2V5LmludGVy
+        bmFsLkVycm9ycyQxLmNhbGwoRXJyb3JzLmphdmE6MjY3KQoJb3JnLmdsYXNz
+        ZmlzaC5qZXJzZXkuaW50ZXJuYWwuRXJyb3JzLnByb2Nlc3MoRXJyb3JzLmph
+        dmE6MzE1KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuaW50ZXJuYWwuRXJyb3Jz
+        LnByb2Nlc3MoRXJyb3JzLmphdmE6Mjk3KQoJb3JnLmdsYXNzZmlzaC5qZXJz
+        ZXkuaW50ZXJuYWwuRXJyb3JzLnByb2Nlc3MoRXJyb3JzLmphdmE6MjY3KQoJ
+        b3JnLmdsYXNzZmlzaC5qZXJzZXkucHJvY2Vzcy5pbnRlcm5hbC5SZXF1ZXN0
+        U2NvcGUucnVuSW5TY29wZShSZXF1ZXN0U2NvcGUuamF2YTozMTcpCglvcmcu
+        Z2xhc3NmaXNoLmplcnNleS5zZXJ2ZXIuU2VydmVyUnVudGltZS5wcm9jZXNz
+        KFNlcnZlclJ1bnRpbWUuamF2YTozMDUpCglvcmcuZ2xhc3NmaXNoLmplcnNl
+        eS5zZXJ2ZXIuQXBwbGljYXRpb25IYW5kbGVyLmhhbmRsZShBcHBsaWNhdGlv
+        bkhhbmRsZXIuamF2YToxMTU0KQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2Vy
+        dmxldC5XZWJDb21wb25lbnQuc2VydmljZUltcGwoV2ViQ29tcG9uZW50Lmph
+        dmE6NDcxKQoJb3JnLmdsYXNzZmlzaC5qZXJzZXkuc2VydmxldC5XZWJDb21w
+        b25lbnQuc2VydmljZShXZWJDb21wb25lbnQuamF2YTo0MjUpCglvcmcuZ2xh
+        c3NmaXNoLmplcnNleS5zZXJ2bGV0LlNlcnZsZXRDb250YWluZXIuc2Vydmlj
+        ZShTZXJ2bGV0Q29udGFpbmVyLmphdmE6MzgzKQoJb3JnLmdsYXNzZmlzaC5q
+        ZXJzZXkuc2VydmxldC5TZXJ2bGV0Q29udGFpbmVyLnNlcnZpY2UoU2Vydmxl
+        dENvbnRhaW5lci5qYXZhOjMzNikKCW9yZy5nbGFzc2Zpc2guamVyc2V5LnNl
+        cnZsZXQuU2VydmxldENvbnRhaW5lci5zZXJ2aWNlKFNlcnZsZXRDb250YWlu
+        ZXIuamF2YToyMjMpCglvcmcuYXBhY2hlLnRvbWNhdC53ZWJzb2NrZXQuc2Vy
+        dmVyLldzRmlsdGVyLmRvRmlsdGVyKFdzRmlsdGVyLmphdmE6NTIpCglvcmcu
+        bmV0YmVhbnMubW9kdWxlcy53ZWIubW9uaXRvci5zZXJ2ZXIuTW9uaXRvckZp
+        bHRlci5kb0ZpbHRlcihNb25pdG9yRmlsdGVyLmphdmE6MzkzKQo8L3ByZT48
+        cD48Yj5ub3RhPC9iPiA8dT5MYSB0cmF6YSBjb21wbGV0YSBkZSBsYSBjYXVz
+        YSBkZSBlc3RlIGVycm9yIHNlIGVuY3VlbnRyYSBlbiBsb3MgYXJjaGl2b3Mg
+        ZGUgZGlhcmlvIGRlIEFwYWNoZSBUb21jYXQvOC4wLjI3LjwvdT48L3A+PGhy
+        IGNsYXNzPSJsaW5lIj48aDM+QXBhY2hlIFRvbWNhdC84LjAuMjc8L2gzPjwv
+        Ym9keT48L2h0bWw+
     http_version: 
-  recorded_at: Thu, 09 Mar 2017 17:53:29 GMT
+  recorded_at: Wed, 15 Mar 2017 17:10:22 GMT
 recorded_with: VCR 3.0.3
