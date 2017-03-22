@@ -31,23 +31,23 @@ http_interactions:
       Content-Length:
       - '1012'
       Date:
-      - Wed, 15 Mar 2017 23:52:16 GMT
+      - Thu, 23 Mar 2017 15:58:18 GMT
     body:
       encoding: UTF-8
-      string: '{"id":"A32B308","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMyQjMwOA==","production":false,"location":{"id":"A36B314","street":"calle
+      string: '{"id":"A31B355","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMxQjM1NQ==","production":false,"location":{"id":"A35B363","street":"calle
         siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
-        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489600337000,"updated":1489600337000,"state":"DISTRITO
-        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A40B308","street":"AV.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263098000,"updated":1490263098000,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A39B356","street":"AV.
         UNIVERSIDAD 4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO
-        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489600337000,"updated":1489600337000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489600337000,"updated":1489600337000}'
+        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263098000,"updated":1490263098000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263098000,"updated":1490263098000}'
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 23:52:17 GMT
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
 - request:
     method: post
     uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SaveEmisorConfigurationMaster/Configuration?UserId=benoror
     body:
       encoding: UTF-8
-      string: '{"emisorId":"A32B308","sessionDuration":24}'
+      string: '{"emisorId":"A31B355","sessionDuration":24}'
     headers:
       User-Agent:
       - Faraday v0.11.0
@@ -69,10 +69,10 @@ http_interactions:
       Content-Length:
       - '69'
       Date:
-      - Wed, 15 Mar 2017 23:52:16 GMT
+      - Thu, 23 Mar 2017 15:58:18 GMT
     body:
       encoding: UTF-8
       string: '{"status":true,"errors":[],"dataName":"EmisorConfiguration","ids":[]}'
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 23:52:17 GMT
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
 recorded_with: VCR 3.0.3

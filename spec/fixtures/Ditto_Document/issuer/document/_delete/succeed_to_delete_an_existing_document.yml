@@ -31,23 +31,23 @@ http_interactions:
       Content-Length:
       - '1012'
       Date:
-      - Wed, 15 Mar 2017 23:52:16 GMT
+      - Thu, 23 Mar 2017 15:58:17 GMT
     body:
       encoding: UTF-8
-      string: '{"id":"A31B309","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMxQjMwOQ==","production":false,"location":{"id":"A35B317","street":"calle
+      string: '{"id":"A30B357","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMwQjM1Nw==","production":false,"location":{"id":"A34B363","street":"calle
         siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
-        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489600336000,"updated":1489600336000,"state":"DISTRITO
-        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A39B310","street":"AV.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263097000,"updated":1490263097000,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A38B358","street":"AV.
         UNIVERSIDAD 4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO
-        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489600336000,"updated":1489600336000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489600336000,"updated":1489600336000}'
+        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263097000,"updated":1490263097000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263097000,"updated":1490263097000}'
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 23:52:16 GMT
+  recorded_at: Thu, 23 Mar 2017 15:58:17 GMT
 - request:
     method: post
     uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SaveEmisorConfigurationMaster/Configuration?UserId=benoror
     body:
       encoding: UTF-8
-      string: '{"emisorId":"A31B309","sessionDuration":24}'
+      string: '{"emisorId":"A30B357","sessionDuration":24}'
     headers:
       User-Agent:
       - Faraday v0.11.0
@@ -69,15 +69,15 @@ http_interactions:
       Content-Length:
       - '69'
       Date:
-      - Wed, 15 Mar 2017 23:52:16 GMT
+      - Thu, 23 Mar 2017 15:58:17 GMT
     body:
       encoding: UTF-8
       string: '{"status":true,"errors":[],"dataName":"EmisorConfiguration","ids":[]}'
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 23:52:17 GMT
+  recorded_at: Thu, 23 Mar 2017 15:58:17 GMT
 - request:
     method: get
-    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/InitApi?Key=QTMxQjMwOQ==&UserId=benoror
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/InitApi?Key=QTMwQjM1Nw==&UserId=benoror
     body:
       encoding: US-ASCII
       string: ''
@@ -102,15 +102,15 @@ http_interactions:
       Content-Length:
       - '315'
       Date:
-      - Wed, 15 Mar 2017 23:52:16 GMT
+      - Thu, 23 Mar 2017 15:58:17 GMT
     body:
       encoding: UTF-8
-      string: '{"status":true,"token":"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzE6MzA5IiwiaWF0IjoxNDg5NjIxOTM3LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTcwODMzN30.dREXPMqgw1-_F7P0Famse35rZENnydnQUwdGDtfMKf3pjw6ItFzb9fGLrzzhtGI_u3BFcw8iHJwlgglxLRBWCg","user":"benoror","expiration":1489708337040,"emisor":null}'
+      string: '{"status":true,"token":"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MzU3IiwiaWF0IjoxNDkwMjg0Njk3LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ5MDM3MTA5N30.KKNEL8yEyD3WUGJiSU_mUon_VCXIMO7CX2fDlZg4G2QjOKenhRSAqGel9yCnHjtnbu4j5Qc6EzCe0MyYOjjI7w","user":"benoror","expiration":1490371097838,"emisor":null}'
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 23:52:17 GMT
+  recorded_at: Thu, 23 Mar 2017 15:58:17 GMT
 - request:
     method: post
-    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SaveDocument/document?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzE6MzA5IiwiaWF0IjoxNDg5NjIxOTM3LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTcwODMzN30.dREXPMqgw1-_F7P0Famse35rZENnydnQUwdGDtfMKf3pjw6ItFzb9fGLrzzhtGI_u3BFcw8iHJwlgglxLRBWCg
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SaveDocument/document?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MzU3IiwiaWF0IjoxNDkwMjg0Njk3LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ5MDM3MTA5N30.KKNEL8yEyD3WUGJiSU_mUon_VCXIMO7CX2fDlZg4G2QjOKenhRSAqGel9yCnHjtnbu4j5Qc6EzCe0MyYOjjI7w
     body:
       encoding: UTF-8
       string: '{"receptor":{"id":"A74B6"},"documentNo":"11223344","version":"3.2","regimen":"simplificado","paymentForm":"PAGO
@@ -136,24 +136,24 @@ http_interactions:
       Content-Length:
       - '2528'
       Date:
-      - Wed, 15 Mar 2017 23:52:16 GMT
+      - Thu, 23 Mar 2017 15:58:17 GMT
     body:
       encoding: UTF-8
-      string: '{"id":"A71B64","emisor":{"id":"A31B309","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMxQjMwOQ==","production":false,"location":{"id":"A35B317","street":"calle
+      string: '{"id":"A72B79","emisor":{"id":"A30B357","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMwQjM1Nw==","production":false,"location":{"id":"A34B363","street":"calle
         siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
-        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489578736000,"updated":1489578736000,"state":"DISTRITO
-        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A39B310","street":"AV.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490241497000,"updated":1490241497000,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A38B358","street":"AV.
         UNIVERSIDAD 4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO
-        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489578736000,"updated":1489578736000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1489578736000,"updated":1489578736000},"receptor":{"id":"A74B6","name":"DUMMY","rfc":"DUMY8001019Q8","active":true,"location":{"id":"A34B9","street":"av
+        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490241497000,"updated":1490241497000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490241497000,"updated":1490241497000},"receptor":{"id":"A74B6","name":"DUMMY","rfc":"DUMY8001019Q8","active":true,"location":{"id":"A34B9","street":"av
         de dummy","postalCode":"04360","townCouncil":"DummyTown","streetNumber":"16
-        EDF 3","apartmentNumber":"Dpto 101","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1483558574000,"updated":1483558574000,"state":"Gaseo","address":"COPILCO
-        UNIVERSIDAD"},"createdBy":"benoror","updatedBy":"benoror","created":1483558574000,"updated":1483558574000},"documentNo":"11223344","version":"3.2","regimen":"simplificado","paymentForm":"PAGO
-        EN UNA SOLA EXHIBICION","voucherType":"ingreso","paymentMethod":"01","expeditionPlace":"Mexico","status":"DR","statusSAT":0,"mensaje":null,"serie":null,"sello":null,"selloSAT":null,"cadenaOriginal":null,"cfdiTimbrado":null,"uuid":null,"certificadoSAT":null,"certificado":null,"noCertificado":null,"qrCode":null,"date":null,"dateInvoiced":null,"subTotal":1000,"total":1160,"active":true,"production":false,"concepts":null,"tax":null,"addenda":null,"totalRetenciones":null,"totalTraslados":null,"versionTFD":null,"createdBy":"benoror","updatedBy":"benoror","created":1489600337000,"updated":1489600337000,"paymentCondition":null,"discount":null,"reasonDiscount":null,"exchangeRate":null,"currency":null,"payAcountNo":null,"folioFiscalOrig":null,"serieFolioFiscalOrig":null,"dateFolioFiscalOrig":null,"amountFolioFiscalOrig":null,"statusCancelSAT":0,"mensajeCancel":null,"uuidCancelRef":null,"statusUuidCancel":null}'
+        EDF 3","apartmentNumber":"Dpto 101","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1481636174000,"updated":1481636174000,"state":"Gaseo","address":"COPILCO
+        UNIVERSIDAD"},"createdBy":"benoror","updatedBy":"benoror","created":1481636174000,"updated":1481636174000},"documentNo":"11223344","version":"3.2","regimen":"simplificado","paymentForm":"PAGO
+        EN UNA SOLA EXHIBICION","voucherType":"ingreso","paymentMethod":"01","expeditionPlace":"Mexico","status":"DR","statusSAT":0,"mensaje":null,"serie":null,"sello":null,"selloSAT":null,"cadenaOriginal":null,"cfdiTimbrado":null,"uuid":null,"certificadoSAT":null,"certificado":null,"noCertificado":null,"qrCode":null,"date":null,"dateInvoiced":null,"subTotal":1000,"total":1160,"active":true,"production":false,"concepts":null,"tax":null,"addenda":null,"totalRetenciones":null,"totalTraslados":null,"versionTFD":null,"createdBy":"benoror","updatedBy":"benoror","created":1490263097000,"updated":1490263097000,"paymentCondition":null,"discount":null,"reasonDiscount":null,"exchangeRate":null,"currency":null,"payAcountNo":null,"folioFiscalOrig":null,"serieFolioFiscalOrig":null,"dateFolioFiscalOrig":null,"amountFolioFiscalOrig":null,"statusCancelSAT":0,"mensajeCancel":null,"uuidCancelRef":null,"statusUuidCancel":null}'
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 23:52:17 GMT
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
 - request:
     method: get
-    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/DeleteDocument/A71B64?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzE6MzA5IiwiaWF0IjoxNDg5NjIxOTM3LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ4OTcwODMzN30.dREXPMqgw1-_F7P0Famse35rZENnydnQUwdGDtfMKf3pjw6ItFzb9fGLrzzhtGI_u3BFcw8iHJwlgglxLRBWCg
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/DeleteDocument/A72B79?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzA6MzU3IiwiaWF0IjoxNDkwMjg0Njk3LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ5MDM3MTA5N30.KKNEL8yEyD3WUGJiSU_mUon_VCXIMO7CX2fDlZg4G2QjOKenhRSAqGel9yCnHjtnbu4j5Qc6EzCe0MyYOjjI7w
     body:
       encoding: US-ASCII
       string: ''
@@ -178,10 +178,10 @@ http_interactions:
       Content-Length:
       - '58'
       Date:
-      - Wed, 15 Mar 2017 23:52:16 GMT
+      - Thu, 23 Mar 2017 15:58:17 GMT
     body:
       encoding: UTF-8
       string: '{"status":true,"errors":[],"dataName":"Document","ids":[]}'
     http_version: 
-  recorded_at: Wed, 15 Mar 2017 23:52:17 GMT
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
 recorded_with: VCR 3.0.3

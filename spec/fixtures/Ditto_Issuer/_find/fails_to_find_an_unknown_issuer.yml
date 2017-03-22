@@ -1,0 +1,169 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SaveEmisorMaster/Emisor?UserId=benoror
+    body:
+      encoding: UTF-8
+      string: '{"name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","production":false,"location":{"street":"calle
+        siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"street":"AV. UNIVERSIDAD
+        4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO FEDERAL","streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true}}'
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1012'
+      Date:
+      - Thu, 23 Mar 2017 15:58:18 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"A32B354","name":"Benjamin Orozco Rios","rfc":"OORB861120","regimen":"simplificado","cerURL":null,"keyURL":null,"userNameSF":"benoror+test@gmail.com","passwordSF":"benorortesttest","satPass":"12345678a","key":"QTMyQjM1NA==","production":false,"location":{"id":"A36B360","street":"calle
+        siempre viva 4444","postalCode":"03240","townCouncil":"BENITO JUAREZ","streetNumber":"No.
+        140","apartmentNumber":"5","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263098000,"updated":1490263098000,"state":"DISTRITO
+        FEDERAL","address":"ACACIAS"},"fiscalLocation":{"id":"A40B354","street":"AV.
+        UNIVERSIDAD 4444","postalCode":"03910","address":"OXTOPULCO","state":"DISTRITO
+        FEDERAL","townCouncil":null,"streetNumber":"1858","apartmentNumber":"2","country":"Mexico","active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263098000,"updated":1490263098000},"active":true,"createdBy":"benoror","updatedBy":"benoror","created":1490263098000,"updated":1490263098000}'
+    http_version: 
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
+- request:
+    method: post
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SaveEmisorConfigurationMaster/Configuration?UserId=benoror
+    body:
+      encoding: UTF-8
+      string: '{"emisorId":"A32B354","sessionDuration":24}'
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '69'
+      Date:
+      - Thu, 23 Mar 2017 15:58:18 GMT
+    body:
+      encoding: UTF-8
+      string: '{"status":true,"errors":[],"dataName":"EmisorConfiguration","ids":[]}'
+    http_version: 
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/InitApi?Key=QTMyQjM1NA==&UserId=benoror
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '315'
+      Date:
+      - Thu, 23 Mar 2017 15:58:18 GMT
+    body:
+      encoding: UTF-8
+      string: '{"status":true,"token":"eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzI6MzU0IiwiaWF0IjoxNDkwMjg0Njk4LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ5MDM3MTA5OH0.vejrONwxPjggzIrLvPlpkDGE7iXEM5B1NmP3swOdSHr5c_vZoPtkIKwPSGrez7a-WvB-y7RpRN-VvFPNNevdEQ","user":"benoror","expiration":1490371098414,"emisor":null}'
+    http_version: 
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/Api-1.0-SNAPSHOT/webresources/invoice/SearchEmisorById/123?Token=eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIjMzI6MzU0IiwiaWF0IjoxNDkwMjg0Njk4LCJzdWIiOiIiLCJpc3MiOiJDaXJydXMiLCJ1c2VyIjoiYmVub3JvciIsImV4cCI6MTQ5MDM3MTA5OH0.vejrONwxPjggzIrLvPlpkDGE7iXEM5B1NmP3swOdSHr5c_vZoPtkIKwPSGrez7a-WvB-y7RpRN-VvFPNNevdEQ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/html;charset=utf-8
+      Content-Language:
+      - en
+      Content-Length:
+      - '6083'
+      Date:
+      - Thu, 23 Mar 2017 15:58:18 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html><html><head><title>Apache Tomcat/8.0.41 - Error report</title><style
+        type=\"text/css\">H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}.line {height: 1px; background-color:
+        #525D76; border: none;}</style> </head><body><h1>HTTP Status 500 - org.glassfish.jersey.server.ContainerException:
+        com.ecaresoft.facturacion.api.entity.bean.MyException: #32:354</h1><div class=\"line\"></div><p><b>type</b>
+        Exception report</p><p><b>message</b> <u>org.glassfish.jersey.server.ContainerException:
+        com.ecaresoft.facturacion.api.entity.bean.MyException: #32:354</u></p><p><b>description</b>
+        <u>The server encountered an internal error that prevented it from fulfilling
+        this request.</u></p><p><b>exception</b></p><pre>javax.servlet.ServletException:
+        org.glassfish.jersey.server.ContainerException: com.ecaresoft.facturacion.api.entity.bean.MyException:
+        #32:354\n\torg.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:487)\n\torg.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre><p><b>root
+        cause</b></p><pre>org.glassfish.jersey.server.ContainerException: com.ecaresoft.facturacion.api.entity.bean.MyException:
+        #32:354\n\torg.glassfish.jersey.servlet.internal.ResponseWriter.rethrow(ResponseWriter.java:278)\n\torg.glassfish.jersey.servlet.internal.ResponseWriter.failure(ResponseWriter.java:260)\n\torg.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:509)\n\torg.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:334)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:271)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:267)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:315)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:297)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:267)\n\torg.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)\n\torg.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)\n\torg.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)\n\torg.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471)\n\torg.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre><p><b>root
+        cause</b></p><pre>com.ecaresoft.facturacion.api.entity.bean.MyException: #32:354\n\tcom.ecaresoft.facturacion.api.ws.InvoiceResource.searchEmisorById(InvoiceResource.java:232)\n\tsun.reflect.NativeMethodAccessorImpl.invoke0(Native
+        Method)\n\tsun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tsun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tjava.lang.reflect.Method.invoke(Method.java:498)\n\torg.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)\n\torg.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)\n\torg.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)\n\torg.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)\n\torg.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)\n\torg.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)\n\torg.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)\n\torg.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)\n\torg.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:326)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:271)\n\torg.glassfish.jersey.internal.Errors$1.call(Errors.java:267)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:315)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:297)\n\torg.glassfish.jersey.internal.Errors.process(Errors.java:267)\n\torg.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)\n\torg.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:305)\n\torg.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)\n\torg.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:471)\n\torg.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:425)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:383)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:336)\n\torg.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:223)\n\torg.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\n</pre><p><b>note</b>
+        <u>The full stack trace of the root cause is available in the Apache Tomcat/8.0.41
+        logs.</u></p><hr class=\"line\"><h3>Apache Tomcat/8.0.41</h3></body></html>"
+    http_version: 
+  recorded_at: Thu, 23 Mar 2017 15:58:18 GMT
+recorded_with: VCR 3.0.3
