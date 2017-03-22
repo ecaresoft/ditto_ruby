@@ -27,7 +27,7 @@ class Ditto::Issuer < Ditto::Base
 
   def self.find(id, token)
     client = Ditto::Client.new
-    attrs = client.get("SearchEmisor/#{id}?Token=#{token}")
+    attrs = client.get("SearchEmisorById/#{id}?Token=#{token}")
     new(attrs)
   end
 

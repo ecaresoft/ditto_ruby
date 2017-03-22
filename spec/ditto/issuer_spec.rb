@@ -57,10 +57,8 @@ describe Ditto::Issuer do
     end
 
     it 'fails to find an unknown issuer', :vcr do
-      pending('this always returns the same issuer')
       issuer1 = Ditto::Issuer.create(attributes)
-      issuer2 = Ditto::Issuer.find('123', issuer1.token)
-      expect(issuer1.id).to_not eq(issuer2.id)
+      expect { Ditto::Issuer.find('123', issuer1.token) }.to raise_error(Faraday::ClientError)
     end
 
     it 'succeed to find same issuer', :vcr do
@@ -70,7 +68,6 @@ describe Ditto::Issuer do
     end
 
     it 'succeed to find different issuer', :vcr do
-      pending("this also returns the token's issuer, not the one we're looking for")
       issuer1 = Ditto::Issuer.create(attributes)
       issuer2 = Ditto::Issuer.create(attributes)
       issuer3 = Ditto::Issuer.find(issuer1.id, issuer2.token)
