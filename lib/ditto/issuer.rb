@@ -25,6 +25,12 @@ class Ditto::Issuer < Ditto::Base
     client.refresh_token = key
   end
 
+  def self.find(id, token)
+    client = Ditto::Client.new
+    attrs = client.get("SearchEmisor/#{id}?Token=#{token}")
+    new(attrs)
+  end
+
   def documents
     @documents ||=
       Ditto::Resource.new(
@@ -32,6 +38,10 @@ class Ditto::Issuer < Ditto::Base
         client,
         "SearchDocument/{id}?Token=#{client.token}"
       )
+  end
+
+  def token
+    client.token
   end
 
   private
