@@ -53,24 +53,24 @@ describe Ditto::Issuer do
 
   describe '#find' do
     it 'fails to find an issuer with wrong token', :vcr do
-      expect { Ditto::Issuer.find('123', 'meep') }.to raise_error(Faraday::ClientError)
+      expect { Ditto::Issuer.find_with_token('123', 'meep') }.to raise_error(Faraday::ClientError)
     end
 
     it 'fails to find an unknown issuer', :vcr do
       issuer1 = Ditto::Issuer.create(attributes)
-      expect { Ditto::Issuer.find('123', issuer1.token) }.to raise_error(Faraday::ClientError)
+      expect { Ditto::Issuer.find_with_token('123', issuer1.token) }.to raise_error(Faraday::ClientError)
     end
 
     it 'succeed to find same issuer', :vcr do
       issuer1 = Ditto::Issuer.create(attributes)
-      issuer2 = Ditto::Issuer.find(issuer1.id, issuer1.token)
+      issuer2 = Ditto::Issuer.find_with_token(issuer1.id, issuer1.token)
       expect(issuer2.id).to eq(issuer1.id)
     end
 
     it 'succeed to find different issuer', :vcr do
       issuer1 = Ditto::Issuer.create(attributes)
       issuer2 = Ditto::Issuer.create(attributes)
-      issuer3 = Ditto::Issuer.find(issuer1.id, issuer2.token)
+      issuer3 = Ditto::Issuer.find_with_token(issuer1.id, issuer2.token)
       expect(issuer3.id).to eq(issuer1.id)
       expect(issuer3.id).to_not eq(issuer2.id)
     end

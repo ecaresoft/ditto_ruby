@@ -25,7 +25,7 @@ class Ditto::Issuer < Ditto::Base
     client.refresh_token = key
   end
 
-  def self.find(id, token)
+  def self.find_with_token(id, token)
     client = Ditto::Client.new
     attrs = client.get("SearchEmisorById/#{id}?Token=#{token}")
     new(attrs)
